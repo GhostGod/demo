@@ -1,4 +1,4 @@
-package thead.pool;
+package thead;
 
 public class TestThreadLocal {
 	final static ThreadLocal<People> threadLocal = new ThreadLocal<People>() {
