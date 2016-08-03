@@ -6,6 +6,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
 		<spring-version>4.2.4.RELEASE</spring-version>
+		<java-version>1.8</java-version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -14,4 +15,16 @@
 			<version>${spring-version}</version>
 		</dependency>
 	</dependencies>
+	<build>  
+    <plugins>  
+        <plugin>  
+            <groupId>org.apache.maven.plugins</groupId>  
+            <artifactId>maven-compiler-plugin</artifactId>  
+            <configuration>  
+                <source>${java-version}</source>  
+                <target>${java-version}</target>  
+            </configuration>  
+        </plugin>  
+    </plugins>  
+</build>  
 </project>

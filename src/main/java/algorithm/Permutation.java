@@ -1,4 +1,4 @@
-package com.liuyang.util;
+package algorithm;
 
 import java.util.Arrays;
 
