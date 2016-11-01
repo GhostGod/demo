@@ -28,9 +28,9 @@ public class Jvm {
 		while (true) {
 			String str = template.getForObject("http://web.sqt.gtimg.cn/q=sz002751?r=" + r.nextDouble(), String.class);
 			System.out.println(new String(str.getBytes("UTF-8"), "GBK").substring(28, 100));
-			str = template.getForObject("http://web.sqt.gtimg.cn/q=sh603025?r=" + r.nextDouble(), String.class);
-			System.out.println(new String(str.getBytes("UTF-8"), "GBK").substring(27, 100));
-			str = template.getForObject("http://web.sqt.gtimg.cn/q=sz000002?r=" + r.nextDouble(), String.class);
+			//str = template.getForObject("http://web.sqt.gtimg.cn/q=sh603025?r=" + r.nextDouble(), String.class);
+			//System.out.println(new String(str.getBytes("UTF-8"), "GBK").substring(27, 100));
+			//str = template.getForObject("http://web.sqt.gtimg.cn/q=sz000002?r=" + r.nextDouble(), String.class);
 			//System.out.println(new String(str.getBytes("UTF-8"), "GBK").substring(29, 100));
 			Thread.sleep(10 * 1000l);
 		}
