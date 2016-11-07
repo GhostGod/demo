@@ -10,8 +10,10 @@ public class Jvm {
 	public void localVarGC() {
 		{
 			byte[] a = new byte[6 * 1024 * 1024];
+			System.out.println(a);
 		}
 		int b = 1;
+		System.out.println(b);
 		System.gc();
 	}
 
@@ -27,6 +29,8 @@ public class Jvm {
 		Random r = new Random();
 		while (true) {
 			String str = template.getForObject("http://web.sqt.gtimg.cn/q=sz002751?r=" + r.nextDouble(), String.class);
+			System.out.println(new String(str.getBytes("UTF-8"), "GBK").substring(28, 100));
+			str = template.getForObject("http://web.sqt.gtimg.cn/q=sh603959?r=" + r.nextDouble(), String.class);
 			System.out.println(new String(str.getBytes("UTF-8"), "GBK").substring(28, 100));
 			//str = template.getForObject("http://web.sqt.gtimg.cn/q=sh603025?r=" + r.nextDouble(), String.class);
 			//System.out.println(new String(str.getBytes("UTF-8"), "GBK").substring(27, 100));
